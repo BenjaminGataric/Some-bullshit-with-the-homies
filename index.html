@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+  </head>
+  <body>
+    <main>
+      <!--Place main name and header-->
+      <h1><strong>Video Game Survey</strong></h1>
+    </main>
+    <section>
+      <!-- What is your name
+         What is your email
+         How old are you 
+         What platform do you play on?
+         How much time do you spend weekly playing games?
+         How much would you be willing to spend on a game?
+         What genre do you enjoy most?
+         How would u rate your gameplay experience this season from a scale of 1 -10?
+         -->
+    <form action="/submit-survey" method="POST">
+        <label for="name">What is your name:</label><br />
+        <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            required /><br /><br />
+
+        <label for="email">What is your email:</label><br />
+        <input 
+            type="text" 
+            id="email" 
+            name="email" 
+            required /><br /><br />
+        
+        <label for="age">How old are you:</label><br />
+        <input 
+            type="number" 
+            id="age" 
+            name="age" 
+            required /><br /><br />
+        
+        <label for="platform">Choose the platform you play on:</label>
+        <select id="platform" name="platform">
+            <option value="playstation">Playstation</option>
+            <option value="Nintendo">Nintendo</option>
+            <option value="Xbox">Xbox</option>
+            <option value="PC">PC</option>
+        </select><br /><br />
+
+        <label for="hours-played">Hours Played per Week:</label><br />
+        <input
+            type="number"
+            id="hours-played"
+            name="hours-played"
+            required 
+        /><br /><br />
+
+        <label for="Genre">What Genre(s) do you play?:</label>
+        <br /><br
+        />
+        <label for="genre1">Action</label>
+        <input 
+            type="checkbox" 
+            id="genre1" 
+            name="genre1" 
+            value="Action" 
+            /><br /><br />
+        
+        <label for="genre2">Adventure</label>
+        <input 
+            type="checkbox" 
+            id="genre2" 
+            name="genre2" 
+            value="Action" 
+            /><br /><br />
+            
+        <label for="genre3">FPS</label>
+        <input 
+            type="checkbox" 
+            id="genre3" 
+            name="genre3" 
+            value="Action" 
+            /><br /><br />
+
+        <label for="genre4">Simulation</label>
+        <input 
+            type="checkbox" 
+            id="genre4" 
+            name="genre4" 
+            value="Action" 
+            /><br /><br />
+
+        <label for="genre5">RPG</label>
+        <input 
+            type="checkbox" 
+            id="genre5" 
+            name="genre5" 
+            value="Action" 
+            /><br /><br />
+
+        <label for="money">How much money are you willing to spend in this game:<label><br />
+        <input
+            type="text"
+            id="money"
+            name="money"
+        /><br /><br />
+
+        <label for="gameplay-rating"
+          >Rate your gameplay experience this season (1-10):</label>
+        <br />
+        <input
+            type="number"
+            min="1"
+            max="10"
+            id="gameplay-rating"
+            name="gameplay-rating"
+        /><br /><br />
+
+        <input 
+            type="submit" 
+            value="Submit Survey"
+        /><br /><br />
+
+        <button 
+            type="button" 
+            onclick="alert('BOO')">Click me!
+        </button>
+        <br /><br />
+      
+    </form>
+    </section>
+  </body>
+</html>
